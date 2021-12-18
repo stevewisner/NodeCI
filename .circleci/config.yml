@@ -1,7 +1,7 @@
 version: '2.1'
 
 orbs:
-  node: circleci/node@14.17
+  node: circleci/4.0
 jobs:
   test:
     executor: node/default

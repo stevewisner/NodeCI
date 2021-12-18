@@ -7,7 +7,7 @@ const client = redis.createClient(keys.redisUrl)
 
 client.get = util.promisify(client.get)
 const exec = mongoose.Query.prototype.exec
-
+ 
 mongoose.Query.prototype.cache = function() {
   this.useCache = true
 
